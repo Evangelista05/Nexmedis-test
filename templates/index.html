@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JSON Viewer</title>
+</head>
+<body>
+    <h2>Data from Backend</h2>
+    <pre id="jsonData">{{ data | tojson(indent=2) }}</pre>
+
+    <h3>Update Data</h3>
+    <form action="/submit-form" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" value="{{ data.name }}"><br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" value="{{ data.age }}"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
