@@ -23,16 +23,15 @@ Aplikasi ini memungkinkan:
 
 ---
 
-##  Struktur Proyek
+## 📁 Struktur Proyek
 
-Nexmedis-test/
-├── main.py # Backend utama menggunakan FastAPI
-├── models.py # Pydantic model (User)
-├── received_data.json # File data yang diterima dan disimpan
-├── templates/
-│ └── index.html # Template HTML frontend
-└── index.html # Antarmuka pengguna
-
+| File/Folder             | Deskripsi                                      |
+|-------------------------|------------------------------------------------|
+| `main.py`               | Backend utama menggunakan FastAPI              |
+| `models.py`             | Model data `User` menggunakan Pydantic         |
+| `received_data.json`    | File penyimpanan data pengguna dalam format JSON |
+| `templates/index.html`  | Template HTML frontend untuk halaman web       |
+| `index.html`            | Salinan template untuk ditampilkan (jika di luar folder `templates`) |
 ---
 
 ##  Cara Menjalankan
